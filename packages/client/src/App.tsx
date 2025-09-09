@@ -11,8 +11,7 @@ useEffect(() => {
   .then(data => setMessage(data.message))
 },[])
 
-return <>
-<p>{message}</p></>
+return <p>{message}</p>
   
 }
 
