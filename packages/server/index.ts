@@ -9,6 +9,10 @@ app.get('/', (req: Request, res: Response) => {
   res.send('hello worlds')
 })
 
+app.get('/api/hello', (req: Request, res: Response) => {
+  res.json({message:"hello world"})
+})
+
 app.listen(port, () => {
   console.log(`Server is runner on http://localhost:${port}`)
 })
